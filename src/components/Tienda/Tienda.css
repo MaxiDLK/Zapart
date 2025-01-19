@@ -1,0 +1,335 @@
+body {
+  background-color: #F2EBE7;
+}
+
+#tarjeta {
+  background-color: transparent;
+  margin-bottom: 3%;
+  text-shadow: 10px 10px 15px #010101;
+  width: fit-content;
+  border-radius: 60px;
+  margin-top: 2%;
+}
+
+#tarjeta img {
+  max-width: 250px;
+  border-radius: 30px;
+  margin-bottom: 0;
+}
+
+#tarjeta ol {
+  align-items: center;
+  text-align: center;
+}
+
+#tarjeta li {
+  display: inline-block;
+  align-items: center;
+  max-width: 300px;
+  margin: 50px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  background-color: #0d2438;
+  border-radius: 20px;
+}
+
+#boton {
+  background-color: #F6E7DE;
+  color: #000000;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+#boton:hover {
+  color: #3AC5C2;
+  background-color: #F9CCA9;
+}
+
+#boton {
+  position: relative;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.boton:hover img {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.boton img {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  padding-bottom: 10%;
+  color: #0D2438;
+  background-color: transparent;
+}
+
+.boton:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 30px;
+  height: 30px;
+  background-image: url('/src/images/plus-circle.svg');
+  background-size: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.boton:hover:after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+#titulo_tarjeta {
+  margin: 10px;
+  margin-top: 3px;
+  color: #F6E7DE;
+}
+
+#precio {
+  color: #F6E7DE;
+  font-size: x-large;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: transparent;
+}
+
+.card-img-top {
+  max-width: 100%;
+  padding: 5%;
+  height: auto;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+  text-align: center;
+}
+
+.categoria {
+  color: #F6E7DE;
+  opacity: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+
+.categoria {
+  color: #F6E7DE;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#botones-categorias {
+  background-color: #0d2438;
+  margin: auto;
+  padding: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: fit-content;
+  border-radius: 0px 0px 74px 73px;
+  -webkit-border-radius: 0px 0px 74px 73px;
+  -moz-border-radius: 0px 0px 74px 73px;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  position: fixed;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.categoria-boton {
+  margin-right: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #0d2438;
+  color: #f0f0f0;
+  margin-top: 000000;
+}
+.categoria-boton.activo {
+  background-color: #3ac5c2;
+  color: white;
+}
+
+.product-item{
+  margin-top: 5% !important;
+}
+
+.carrito {
+  position: fixed;
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde la derecha */
+  background-color: #f6e7de; /* Color de fondo */
+  border-radius: 50%; /* Convertirlo en un círculo */
+  padding: 0; /* Sin padding extra */
+  cursor: pointer; /* Mostrar que es clickeable */
+  width: 60px; /* Anchura del botón */
+  height: 60px; /* Altura del botón */
+  display: flex; /* Usar flexbox */
+  align-items: center; /* Centrar contenido verticalmente */
+  justify-content: center; /* Centrar contenido horizontalmente */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Sombras para un efecto flotante */
+  z-index: 1000; /* Asegurarse de que esté en la parte superior */
+  border: none; /* Sin borde */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animación en hover */
+}
+
+.carrito:hover {
+  background-color: #f9cca9; /* Cambiar color de fondo en hover */
+  transform: scale(1.1); /* Escalar el div completo en hover */
+}
+
+.carrito img {
+  width: 30px; /* Ajusta el tamaño del ícono */
+  height: 30px;
+  object-fit: contain; /* Asegura que la imagen se ajuste bien */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Animación en hover */
+}
+
+.carrito:hover img {
+  transform: scale(1.2); /* Escalar la imagen al pasar el mouse */
+  opacity: 0.9; /* Ajustar la opacidad */
+}
+
+.boton-carrito {
+  border: none; /* Quitar bordes del botón */
+  background: transparent; /* Sin fondo en el botón */
+  width: 100%; /* Asegurar que el botón ocupe todo el área del contenedor */
+  height: 100%;
+  display: flex; /* Centrar el contenido dentro del botón */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.boton-carrito img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Animación para la imagen */
+}
+
+.carrito-contenido {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  background-color:white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  z-index: 100;
+}
+
+.carrito-contenido ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carrito-contenido li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.carrito-contenido li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.carrito-contenido span,p{
+  color: #000000;
+}
+
+.eliminar-boton {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.eliminar-boton:hover {
+  background-color: darkred;
+}
+
+.boton-carrito{
+  height: 10%;
+  border-radius: 50% !important;
+}
+
+.carrito button span{
+  
+  color: #0d2438;
+  padding-left: 10%;
+}
+
+.carrito button{
+  height: 100%;
+}
+
+.imgcart{
+  width: 100%;
+}
+
+.finalizar-compra {
+  padding: 13px 26px;
+  margin-left: 0;
+  text-align: left;
+  font-size: 1.2rem;
+  background-color: #00abf0;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+
+
+.finalizar-compra:hover {
+  background-color: #3ac5c2;
+  transform: scale(1.05);
+}
+
+.finalizar-compra:active {
+  transform: scale(0.95); 
+}
+
+.finalizar-compra:focus {
+  outline: none; }
+
+.finalizar-compra:focus-visible {
+  outline: 2px solid #00abf0; 
+}

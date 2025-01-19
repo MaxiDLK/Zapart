@@ -1,0 +1,76 @@
+html, body {
+    width: 100%; /* Asegura que el html y el body tengan un ancho del 100% */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina paddings por defecto */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.custom-navbar {
+    background-color: #0d2438;
+    width: 100%; /* Asegura que el navbar tenga el 100% de ancho */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.custom-navbar .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #3ac5c2; 
+}
+
+.custom-navbar .nav-link.active {
+    color: #3ac5c2;
+}
+
+.custom-navbar .btn {
+    color: #ffffff; 
+    background-color: transparent;
+    border: 2px solid transparent; /* Añadir borde transparente por defecto */
+    transition: color 0.3s ease, border-color 0.3s ease; /* Añadir transición para el borde */
+}
+
+.custom-navbar .btn:hover {
+    color: #3ac5c2; 
+}
+
+/* Estilo del botón Log In */
+.custom-navbar .btn-outline {
+    border: 2px solid #3ac5c2; /* Añadir borde sólido */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.custom-navbar .btn-outline:hover {
+    background-color: #3ac5c2; /* Fondo al pasar el mouse */
+    color: #ffffff; 
+}
+
+/* Estilo del botón Register */
+.custom-navbar .btn-outline2 {
+    position: relative; 
+    overflow: hidden; 
+    color: #3ac5c2;
+    transition: color 0.3s ease;
+    z-index: 1; 
+    border: 2px solid #f3f3f3; /* Borde sólido para el botón Register */
+    padding: 5px 15px; 
+    margin-right: 15px;
+    background-color: transparent; /* Fondo transparente */
+}
+
+.custom-navbar form {
+    margin-right: 10px; 
+}
+
+.custom-navbar form:last-child {
+    margin-right: 0;
+}

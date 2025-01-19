@@ -1,0 +1,108 @@
+body {
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+  }
+  
+  /* Contenedor de la imagen y el texto */
+  .image-container {
+    width: 100%;
+    margin-top: 0px; /* Espacio superior si es necesario */
+    margin-bottom: 0%;
+  }
+  .qr-section {
+    position: relative;
+    top: 150px; /* Ajusta el valor según lo necesites */
+  }
+  
+  /* Estilo de la imagen */
+  .image {
+    
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Contenedor del texto centrado en el primer cuarto de la imagen */
+  .text-overlay {
+    position: absolute;
+    top: 0%; /* Ajusta para que esté en el primer cuarto vertical */
+    left: 20%; /* Ajusta para que esté en el primer cuarto horizontal */
+    color: #0d2438; /* Color oscuro para el texto (oscuro para contraste sobre el fondo blanco) */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Sombra suave para mejorar la legibilidad */
+    padding: 10px;
+    max-width: 70%; /* Limita el ancho del texto */
+    transform: translate(-50%, -50%); /* Centra el texto dentro del primer cuarto */
+  }
+  
+  .text-overlay h1, .text-overlay h2, .text-overlay p {
+    margin: 5px 0;
+  }
+  
+  .text-overlay h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: left;
+  }
+  
+  .text-overlay h2 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: left;
+  }
+  .text-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: left;
+  }
+  
+  /* Estilo del botón de descarga */
+  .download-btn {
+    padding: 13px 26px;
+    margin-left: 0; /* Esto hace que el botón quede pegado a la izquierda */
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #00abf0;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 3rem;
+  }
+  
+  
+  .download-btn:hover {
+    background-color: #3ac5c2; /* Color cuando se pasa el mouse */
+    transform: scale(1.05); /* Efecto de aumento de tamaño */
+  }
+  
+  .download-btn:active {
+    transform: scale(0.95); /* Efecto de "presionado" */
+  }
+  
+  .download-btn:focus {
+    outline: none; /* Elimina el borde del enfoque */
+  }
+  
+  .download-btn:focus-visible {
+    outline: 2px solid #00abf0; /* Añade un contorno visible cuando se hace foco */
+  }
+  
+  /* Ajuste en dispositivos pequeños */
+  @media (max-width: 768px) {
+    .download-btn {
+      font-size: 1rem; /* Ajuste del tamaño del botón */
+      padding: 10px 25px; /* Ajuste del tamaño del botón */
+    }
+  }
+  
+  
+  /* Ajuste en dispositivos pequeños */
+  @media (max-width: 768px) {
+    .text-overlay {
+      top: 10%; /* Ajusta la distancia desde el borde superior */
+      left: 10%; /* Ajusta la distancia desde el borde izquierdo */
+      max-width: 80%; /* Aumenta el ancho en pantallas pequeñas */
+    }
+  }

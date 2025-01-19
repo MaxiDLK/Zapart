@@ -1,0 +1,113 @@
+/* Contenedor principal */
+.contactanos-container {
+    margin: 5%;
+    margin-left: 2%;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Título */
+  .contactanos-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenido del formulario y los datos de contacto */
+  .contactanos-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Estilos del formulario */
+  .contactanos-form {
+    flex: 1;
+  }
+  
+  .contactanos-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #00abf0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #007bb5;
+  }
+  
+/* Estilos de la sección de información de contacto */
+.contactanos-info {
+    flex: 1;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .contactanos-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .contactanos-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .contactanos-links p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .contactanos-links a {
+    color: #00abf0;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contactanos-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .contactanos-links strong {
+    color: #333;
+    font-weight: bold;
+  }
+  

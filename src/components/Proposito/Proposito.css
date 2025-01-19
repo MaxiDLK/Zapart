@@ -1,0 +1,34 @@
+/* Contenedor principal del componente */
+.proposito-container {
+    margin: 5%;
+    margin-left: 2%;
+    text-align: left;
+    color: #333; /* Color oscuro para el texto */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Título principal */
+.proposito-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000; /* Letras más oscuras */
+}
+
+/* Texto general */
+.proposito-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Links (si se agregan en el futuro) */
+.proposito-text a {
+    color: #202028; /* Color azul para enlaces */
+    text-decoration: none;
+}
+
+.proposito-text a:hover {
+    text-decoration: underline;
+}

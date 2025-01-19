@@ -1,0 +1,74 @@
+body {
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Ajustar márgenes de las secciones de Ayuda y Sobre nosotros */
+#ayuda, #sobre-nosotros {
+  padding-left: 10%; /* Ajusta este valor para mover hacia la derecha */
+}
+
+#ayuda ul, #sobre-nosotros ul {
+  padding-left: 0; /* Elimina padding de las listas para que no se desplacen hacia la izquierda */
+}
+
+#ayuda a, #sobre-nosotros a {
+  color: #F2EBE7; /* Asegura que el color de los enlaces sea consistente */
+}
+
+/* Para centrar el logo y el texto */
+.text-center {
+  text-align: center;
+  padding-left: 10%; /* Añadir margen izquierdo al contenedor del logo */
+}
+
+.copy {
+  padding: 0 5%; /* Añade padding a los lados */
+}
+
+@media (max-width: 768px) {
+  #ayuda, #sobre-nosotros {
+    padding-left: 5%; /* Reducir padding en pantallas pequeñas */
+  }
+}
+
+a{
+  text-decoration:none;
+  color: #f3f3f3 ;
+}
+#bases{
+  margin-left: 0;
+  padding: 0;
+}
+footer{
+  background-color: #0d2438;
+}
+
+span, h5, p{
+  color: #f3f3f3;
+}
+
+#superior{
+  margin-left: 5%;
+}
+
+#logo{
+  margin-left: 21%;
+}
+
+a{
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+a:hover{
+  color: #3ac5c2; 
+}
+
+.subtitulo{
+  font-weight: bolder;
+}
+
+.textof{
+  color: #ffffff !important;
+}
+  

@@ -1,0 +1,85 @@
+.checkout span{
+    color: #0D2438 !important ;
+    text-align: center !important;
+    width: max-content;
+    flex-direction: row;
+}
+
+.checkout ul{
+    list-style: none;
+}
+
+.checkout p{
+  color: #0D2438;
+}
+
+.carritoprod {
+padding: 5%;
+}
+
+.checkout {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenedor principal horizontalmente */
+    width: 100%;
+}
+
+.checkout ul {
+    width: 80%; /* Ajuste del ancho del contenedor de la lista */
+    padding: 0;
+}
+
+.checkout #card {
+    display: flex; /* Usamos flexbox para alinear la imagen y el texto */
+    align-items: center; /* Alinear imagen y texto verticalmente */
+    justify-content: flex-start; /* Mantener la imagen a la izquierda */
+    margin-bottom: 10px; /* Espacio entre las tarjetas */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde alrededor de la tarjeta */
+    width: 120rem; /* Ancho fijo para el contenedor de la tarjeta */
+    box-sizing: border-box; /* Incluir padding y borde en el cálculo del tamaño */
+}
+
+.checkout #card img {
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    width: 200px; /* Tamaño de la imagen */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.checkout #card span {
+    white-space: nowrap; /* Mantener el texto en una sola línea */
+}
+
+  .finalizar-compra {
+    padding: 13px 26px;
+    margin-left: 0;
+    text-align: left;
+    font-size: 1.2rem;
+    background-color: #00abf0;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+
+
+  .finalizar-compra:hover {
+    background-color: #3ac5c2;
+    transform: scale(1.05);
+  }
+
+  .finalizar-compra:active {
+    transform: scale(0.95); 
+  }
+
+  .finalizar-compra:focus {
+    outline: none; }
+
+  .finalizar-compra:focus-visible {
+    outline: 2px solid #00abf0; 
+  }
